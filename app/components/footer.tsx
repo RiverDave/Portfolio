@@ -9,6 +9,11 @@ const data = [
     title: "Linkedin",
     link: "https://linkedin.com/in/david-riverag",
   },
+
+  {
+    title: "CV",
+    link: "https://drive.google.com/file/d/1GJH1eJj9VH1Q3d8J3zK0wXQV8zH6R9z4/view?usp=sharing",
+  },
 ]
 
 function ArrowIcon() {
@@ -48,7 +53,7 @@ export default function Footer() {
         ))}
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} MIT Licensed
+        © {new Date().getFullYear()} David Rivera
       </p>
     </footer>
   )

@@ -1,23 +1,31 @@
-import { BlogPosts } from 'app/components/posts'
+import { BlogPosts } from "app/components/posts"
+import Header from "./components/landing/header"
 
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Hi, I'm David Rivera 👋
-      </h1>
+      <Header />
 
-      <div className='flex'>
-
-      </div>
-      <p className="mb-4">
+      <h2 className="text-2xl font-semibold tracking-tighter mb-3">About Me</h2>
+      <p className="mb-3 text-sm">
         {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
         Vim's keystroke commands and tabs' flexibility for personal viewing
         preferences. This extends to my support for static typing, where its
         early error detection ensures cleaner code, and my preference for dark
         mode, which eases long coding sessions by reducing eye strain.`}
       </p>
+
       <div className="my-8">
+        <div className="flex-auto align-middle justify-center pb-10">
+          <h2 className="text-center text-4xl font-semibold tracking-tighter mb-4">
+            My Projects
+          </h2>
+
+          <p className="mb-4">
+            {`If there's something I thrive for it's building unusual and unique projects. You won't find your generic TODO, Calculator applications. Overall these are my favorite projects that I've worked on.`}
+          </p>
+        </div>
+
         <BlogPosts />
       </div>
     </section>
