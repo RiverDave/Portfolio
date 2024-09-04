@@ -6,11 +6,11 @@ export default function Header() {
     <div className="mb-8 flex flex-col md:flex-row">
       <div className="flex flex-col items-start justify-center">
         <h1 className="text-start text-4xl font-semibold tracking-tighter">
-          David Rivera
+          Hi, David Rivera 👋
         </h1>
-        <p className="mt-2 text-start">
+        <p className="text-xl mt-2 text-start ">
           {`
-            I'm an Aspiring Software developer who enjoys building unique projects and solving complex problems. I love Compilers and low level programming. Seneca Polytechnic Student.
+            Seneca Polytechnic student with a passion for software development.
           `}
         </p>
       </div>

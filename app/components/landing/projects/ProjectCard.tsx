@@ -10,7 +10,7 @@ interface ProjectSectionProps {
   tools?: string[]
 }
 
-export default function Component({
+export default function Project({
   title,
   description,
   imageUrl,
@@ -29,7 +29,7 @@ export default function Component({
     <section className="py-12 border-b border-gray-200 last:border-b-0">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:items-start md:space-x-8">
-          <div className="md:w-1/2 mb-6 md:mb-0">
+          <div className="md:w-1/2  mb-6 md:mb-0">
             <Image
               src={imageUrl || defaultImageUrl}
               alt={`${title || defaultTitle} preview`}
@@ -40,7 +40,7 @@ export default function Component({
           </div>
           <div className="md:w-1/2">
             <h2 className="text-2xl font-bold mb-4">{title || defaultTitle}</h2>
-            <p className="text-gray-600 mb-6">
+            <p className="dark:text-neutral-300 mb-6">
               {description || defaultDescription}
             </p>
             <div className="mb-6">
@@ -66,6 +66,7 @@ export default function Component({
                   width={40}
                   alt="Github Logo"
                   src={"/images/github.svg"}
+                  color="#FFFFFFF"
                   className="w-4 h-4 mr-2"
                 />
                 View Source Code

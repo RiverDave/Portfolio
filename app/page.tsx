@@ -8,7 +8,7 @@ export default function Page() {
       <Header />
 
       <h2 className="text-2xl font-semibold tracking-tighter mb-3">About Me</h2>
-      <p className="mb-3 text-sm">
+      <p className="mb-3 text-sm dark:text-neutral-300">
         {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
         Vim's keystroke commands and tabs' flexibility for personal viewing
         preferences. This extends to my support for static typing, where its
@@ -24,7 +24,7 @@ export default function Page() {
             My Projects
           </h2>
 
-          <p className="mb-4 text-sm">
+          <p className="mb-4 text-sm dark:text-neutral-300">
             {`If there's something I thrive for it's building unusual and unique projects. You won't find your generic TODO, Calculator applications. Overall these are my favorite projects that I've worked on.`}
           </p>
 

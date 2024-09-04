@@ -18,6 +18,7 @@ export default function SkillsSection() {
     "Docker",
     "Google Cloud",
     "SQL",
+    "Unix/Linux",
   ]
 
   return (
