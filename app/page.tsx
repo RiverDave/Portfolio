@@ -1,5 +1,6 @@
-import { BlogPosts } from "app/components/posts"
 import Header from "./components/landing/header"
+import { ProjectSection } from "./components/landing/projects"
+import SkillsSection from "./components/landing/skills"
 
 export default function Page() {
   return (
@@ -15,18 +16,20 @@ export default function Page() {
         mode, which eases long coding sessions by reducing eye strain.`}
       </p>
 
+      <SkillsSection />
+
       <div className="my-8">
         <div className="flex-auto align-middle justify-center pb-10">
-          <h2 className="text-center text-4xl font-semibold tracking-tighter mb-4">
+          <h2 className="text-center mb-4 mt-10 scroll-m-20  pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
             My Projects
           </h2>
 
-          <p className="mb-4">
+          <p className="mb-4 text-sm">
             {`If there's something I thrive for it's building unusual and unique projects. You won't find your generic TODO, Calculator applications. Overall these are my favorite projects that I've worked on.`}
           </p>
-        </div>
 
-        <BlogPosts />
+          <ProjectSection />
+        </div>
       </div>
     </section>
   )
