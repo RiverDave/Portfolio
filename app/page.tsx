@@ -1,3 +1,4 @@
+import ContactSection from "./components/landing/Contact/contact"
 import About from "./components/landing/about"
 import Education from "./components/landing/education"
 import Experience from "./components/landing/Experience/exp"
@@ -30,9 +31,11 @@ export default function Page() {
         <SkillsSection />
       </BlurFade>
 
-      <BlurFade delay={dspeed * 2.8} inView>
+      <BlurFade delay={dspeed * 2.5} inView>
         <ProjectSection />
       </BlurFade>
+
+      <ContactSection />
     </section>
   )
 }

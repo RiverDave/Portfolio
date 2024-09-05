@@ -26,6 +26,7 @@ const Experience = () => {
           logoUrl={item.logoUrl}
           altText={item.altText}
           description={item.description}
+          isExpanded
         />
       ))}
     </section>

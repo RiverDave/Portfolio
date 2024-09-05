@@ -11,7 +11,7 @@ export function ProjectSection() {
         </h2>
 
         <p className="mb-4 text-xl  dark:text-neutral-300 text-center leading-relaxed ">
-          {`If there's something I thrive for it's building unusual and unique projects. You won't find your generic TODO, Calculator applications in here.`}
+          {`If there's something I thrive for it's building unusual and unique projects. You won't find your generic TODO Calculator Tutorial in here.`}
         </p>
       </div>
 

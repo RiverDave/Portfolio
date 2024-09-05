@@ -1,5 +1,6 @@
 import React from "react"
 import Image from "next/image"
+import Icons from "./icons"
 
 export default function Header() {
   return (
@@ -13,6 +14,8 @@ export default function Header() {
             Seneca Polytechnic student with a passion for software development.
           `}
         </p>
+
+        <Icons />
       </div>
 
       <div className="flex justify-center md:justify-end py-8">
