@@ -7,13 +7,13 @@ export default function SkillsSection() {
     "C",
     "C++",
     "React",
+    "React Native",
     "Go",
     "REST API",
     "NodeJS",
     "NextJS",
     "LLVM",
     "Bash",
-    "Assembly",
     "Agile",
     "Docker",
     "Google Cloud",
@@ -23,8 +23,8 @@ export default function SkillsSection() {
 
   return (
     <div className="max-h-svh w-full flex-col py-4">
-      <div className="mb-5">
-        <h2 className="mb-4 mt-10 scroll-m-20 pb-2 text-center text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+      <div className="mb-3">
+        <h2 className=" mt-10 scroll-m-20 pb-2 text-start text-xl font-semibold tracking-tight transition-colors first:mt-0">
           Skills
         </h2>
       </div>

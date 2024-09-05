@@ -1,12 +1,17 @@
+"use client"
+
 import { Button } from "app/components/shadcn/button"
 import { Badge } from "app/components/shadcn/badge"
 import Image from "next/image"
+import { GithubIcon } from "app/components/svgs"
+import { useTheme } from "next-themes"
 
 interface ProjectSectionProps {
   title?: string
   description?: string
   imageUrl?: string
   sourceCodeUrl?: string
+  webUrl?: string
   tools?: string[]
 }
 
@@ -15,9 +20,12 @@ export default function Project({
   description,
   imageUrl,
   sourceCodeUrl,
+  webUrl,
   tools,
 }: ProjectSectionProps) {
   // Default values
+  const { theme } = useTheme()
+
   const defaultTitle = "Project Title"
   const defaultDescription =
     "This project showcases innovative features and cutting-edge technology. It demonstrates proficiency in various aspects of development, including frontend design, backend integration, and overall system architecture."
@@ -55,20 +63,18 @@ export default function Project({
                 ))}
               </div>
             </div>
+
             <Button variant="outline" className="w-full sm:w-auto" asChild>
               <a
                 href={sourceCodeUrl || defaultSourceCodeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Image
-                  height={40}
-                  width={40}
-                  alt="Github Logo"
-                  src={"/images/github.svg"}
-                  color="#FFFFFFF"
-                  className="w-4 h-4 mr-2"
-                />
+                {theme === "dark" ? (
+                  <GithubIcon className="text-xs mr-2 text-white" />
+                ) : (
+                  <GithubIcon className="text-xs mr-2 text-black" />
+                )}
                 View Source Code
               </a>
             </Button>
