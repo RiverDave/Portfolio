@@ -1,7 +1,7 @@
 "use client"
 
-import { GithubIcon } from "app/components/svgs"
-import { LinkedinIcon } from "app/components/svgs"
+import { GithubIcon } from "@/app/components/svgs"
+import { LinkedinIcon } from "@/app/components/svgs"
 import { useTheme } from "next-themes"
 import Link from "next/link"
 

@@ -3,7 +3,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from "../../shadcn/avatar"
 import { Badge } from "../../shadcn/badge"
 import { Card, CardHeader } from "../../shadcn/card"
-import { cn } from "lib/utils"
+import { cn } from "@/lib/utils"
 import { motion } from "framer-motion"
 import { ChevronRightIcon } from "lucide-react"
 import Link from "next/link"

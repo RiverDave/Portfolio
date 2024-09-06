@@ -1,9 +1,9 @@
 "use client"
 
-import { Button } from "app/components/shadcn/button"
-import { Badge } from "app/components/shadcn/badge"
+import { Button } from "@/app/components/shadcn/button"
+import { Badge } from "@/app/components/shadcn/badge"
 import Image from "next/image"
-import { GithubIcon } from "app/components/svgs"
+import { GithubIcon } from "@/app/components/svgs"
 import { useTheme } from "next-themes"
 
 interface ProjectSectionProps {
