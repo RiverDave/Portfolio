@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
 }
 
-const cx = (...classes) => classes.filter(Boolean).join(" ")
+const cx = (...classes: string[]) => classes.filter(Boolean).join(" ")
 
 export default function RootLayout({
   children,
@@ -46,24 +46,24 @@ export default function RootLayout({
 }) {
   return (
     <html
+      suppressHydrationWarning
       lang="en"
-      className={cx(
-        "text-black bg-white dark:text-white dark:bg-black",
-        GeistSans.variable,
-        GeistMonoNonVariable.variable
-      )}
+      className={cx(GeistSans.className)}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Providers>
-            <Navbar />
-            {children}
-            <Footer />
-          </Providers>
-          <Analytics />
-          <SpeedInsights />
-        </main>
-      </body>
+      <Providers>
+        <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto bg-background">
+          <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0 bg-background">
+            <div className="container min-h-screen bg-background">
+              <Navbar />
+              {children}
+              <Footer />
+
+              <Analytics />
+              <SpeedInsights />
+            </div>
+          </main>
+        </body>
+      </Providers>
     </html>
   )
 }

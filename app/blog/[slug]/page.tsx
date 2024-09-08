@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation"
-import { CustomMDX } from "app/components/mdx"
-import { formatDate, getBlogPosts } from "app/blog/utils"
-import { baseUrl } from "app/sitemap"
+import { CustomMDX } from "@/app/components/mdx"
+import { formatDate, getBlogPosts } from "@/app/blog/utils"
+import { baseUrl } from "@/app/sitemap"
 
 export async function generateStaticParams() {
   let posts = getBlogPosts()
@@ -11,7 +11,8 @@ export async function generateStaticParams() {
   }))
 }
 
-export function generateMetadata({ params }) {
+//NOTE: This function im skipping the lint check since it is not used in the actual build
+export function generateMetadata({ params }: any): any {
   let post = getBlogPosts().find((post) => post.slug === params.slug)
   if (!post) {
     return
@@ -51,7 +52,7 @@ export function generateMetadata({ params }) {
   }
 }
 
-export default function Blog({ params }) {
+export default function Blog({ params }: any) {
   let post = getBlogPosts().find((post) => post.slug === params.slug)
 
   if (!post) {

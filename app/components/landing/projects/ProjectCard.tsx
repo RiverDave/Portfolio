@@ -68,28 +68,42 @@ export default function Project({
             </div>
 
             <div className="flex flex-row space-x-4 justify-center">
-              <Button variant="outline" className="w-1/2" asChild>
+              <Button
+                variant="outline"
+                className="w-1/2 bg-black dark:bg-white"
+                asChild
+              >
                 <Link
                   href={sourceCodeUrl || defaultSourceCodeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="text-white dark:text-black"
                 >
                   {theme === "light" ? (
-                    <GithubIcon className="text-xs mr-2 text-black" />
-                  ) : (
                     <GithubIcon className="text-xs mr-2 text-white" />
+                  ) : (
+                    <GithubIcon className="text-xs mr-2 text-black" />
                   )}
                   Code
                 </Link>
               </Button>
 
               {webUrl && (
-                <Button variant="outline" className="w-1/2" asChild>
-                  <Link href={webUrl} target="_blank" rel="noopener noreferrer">
+                <Button
+                  variant="outline"
+                  className="w-1/2 bg-black dark:bg-white"
+                  asChild
+                >
+                  <Link
+                    href={webUrl}
+                    target="_blank"
+                    className="text-white dark:text-black"
+                    rel="noopener noreferrer"
+                  >
                     {theme === "light" ? (
-                      <AppWindow className="text-xs mr-2 text-black" />
-                    ) : (
                       <AppWindow className="text-xs mr-2 text-white" />
+                    ) : (
+                      <AppWindow className="text-xs mr-2 text-black" />
                     )}
                     Website
                   </Link>
