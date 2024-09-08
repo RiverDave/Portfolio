@@ -1,6 +1,43 @@
 import Project from "./projects/ProjectCard"
 
-const test = [0, 1, 2]
+const test = [
+  {
+    title: "Interfuse Compiler",
+    description:
+      "Designed and implemented Interfuse, a modern programming language with LLVM. inspired by C and contemporary language features. This personal project demonstrates proficiency in compiler design, language theory, and strong problem solving.",
+    imageUrl: "/images/llvm.png",
+    sourceCodeUrl: "https://github.com/RiverDave/InterfuseLang",
+    tools: ["C++", "LLVM", "Bison", "Emscripten", "WebAssembly"],
+  },
+
+  {
+    title: "Containerized compiler",
+    description:
+      "Created an online compiler for my own programming language using Docker and Google Cloud. This project demonstrates proficiency in containerization, web development, and cloud computing.",
+    imageUrl: "/images/editor.png",
+    sourceCodeUrl: "https://github.com/RiverDave/Interfuse-website",
+    webUrl: "https://interfuselang.com",
+
+    tools: [
+      "Docker",
+      "Google Cloud",
+      "React",
+      "Node.js",
+      "Next.js",
+      "TypeScript",
+    ],
+  },
+
+  {
+    title: "Image-to-Marketing Suggestions API",
+
+    description:
+      "Developed an API using machine learning and image recognition to analyze images and generate marketing suggestions. Outputs include ads, captions, hashtags, SEO keywords, and audience insights.",
+    imageUrl: "/images/ad.png",
+    sourceCodeUrl: "https://github.com/RiverDave/ADVision-api",
+    tools: ["Go", "Docker", "Google Cloud", "React", "Node.js", "TypeScript"],
+  },
+]
 
 export function ProjectSection() {
   return (
@@ -16,8 +53,16 @@ export function ProjectSection() {
       </div>
 
       <div className="flex flex-col justify-center items-center py-5">
-        {test.map((i) => (
-          <Project key={i} />
+        {test.map((item, idx) => (
+          <Project
+            title={item.title}
+            description={item.description}
+            imageUrl={item.imageUrl}
+            sourceCodeUrl={item.sourceCodeUrl}
+            tools={item.tools}
+            key={idx}
+            webUrl={item.webUrl}
+          />
         ))}
       </div>
     </section>

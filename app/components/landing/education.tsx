@@ -5,10 +5,10 @@ const data = [
   {
     title: "Seneca Polythecnic",
     period: "2023 - 2025",
-    subtitle: "Computer Programming and Analysis",
+    subtitle: "Computer Programming & Analysis",
     altText: "Seneca",
     logoUrl: "/images/seneca.png",
-    href: "/images/seneca.png",
+    href: "https://www.senecapolytechnic.ca/programs/fulltime/CPA.html",
   },
 ]
 

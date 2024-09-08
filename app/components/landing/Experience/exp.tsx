@@ -8,7 +8,7 @@ const data = [
     logoUrl: "/images/loblaws.png",
     altText: "Loblaws",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla",
+      "provided exceptional customer service, addressing inquiries, resolving issues, and ensuring a positive shopping experience for Loblaws customers. My responsibilities included handling transactions, assisting with product returns, and offering personalized assistance to meet customer needs.",
   },
 ]
 const Experience = () => {

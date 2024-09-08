@@ -13,7 +13,7 @@ const ContactSection = () => {
         <p className="z-10">
           Let&apos;s Build{" "}
           <a
-            href="https://your-link-here.com"
+            href="mailto:davidriverg@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 underline"

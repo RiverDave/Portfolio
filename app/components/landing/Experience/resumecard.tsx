@@ -41,7 +41,7 @@ export const ResumeCard = ({
   }
 
   const CardContent = (
-    <Card className="flex flex-col rounded-none border-none justify-center">
+    <Card className="flex flex-col rounded-none border-none justify-center mb-4">
       <CardHeader className="flex-row items-center">
         <Avatar className="border dark:border-neutral-500 size-10 bg-muted-background dark:bg-foreground mr-4">
           <AvatarImage src={logoUrl} alt={altText} className="object-contain" />
@@ -92,7 +92,9 @@ export const ResumeCard = ({
           }}
           className="mt-2 text-xs sm:text-sm"
         >
-          <p className=" dark:text-neutral-300 pl-20  mb-5">{description}</p>
+          <p className="text-neutral-600  dark:text-neutral-300 pl-20  mb-5">
+            {description}
+          </p>
         </motion.div>
       )}
     </Card>
