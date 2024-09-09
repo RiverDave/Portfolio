@@ -34,8 +34,9 @@ const test = [
     description:
       "Developed an API using machine learning and image recognition to analyze images and generate marketing suggestions. Outputs include ads, captions, hashtags, SEO keywords, and audience insights.",
     imageUrl: "/images/ad.png",
-    sourceCodeUrl: "https://github.com/RiverDave/ADVision-api",
+    sourceCodeUrl: "https://github.com/RiverDave/ADVision-API",
     tools: ["Go", "Docker", "Google Cloud", "React", "Node.js", "TypeScript"],
+    webUrl: "https://ad-vision-site-git-main-riverdaves-projects.vercel.app/",
   },
 ]
 

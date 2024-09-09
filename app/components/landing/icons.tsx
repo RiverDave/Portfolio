@@ -15,10 +15,10 @@ const Icons = () => {
       link: linkedinUrl,
     },
 
-    {
-      title: "CV",
-      link: cvUrl,
-    },
+    // {
+    //   title: "CV",
+    //   link: cvUrl,
+    // },
   ]
   if (!linkedinUrl || !githubUrl || !cvUrl) {
     return null

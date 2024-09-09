@@ -18,10 +18,10 @@ const data = [
     link: "https://linkedin.com/in/david-riverag",
   },
 
-  {
-    title: "CV",
-    link: "https://drive.google.com/file/d/1GJH1eJj9VH1Q3d8J3zK0wXQV8zH6R9z4/view?usp=sharing",
-  },
+  // {
+  //   title: "CV",
+  //   link: "https://drive.google.com/file/d/1GJH1eJj9VH1Q3d8J3zK0wXQV8zH6R9z4/view?usp=sharing",
+  // },
 ]
 
 function ArrowIcon() {
