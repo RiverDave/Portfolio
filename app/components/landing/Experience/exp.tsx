@@ -34,7 +34,7 @@ const Experience = () => {
           logoUrl={item.logoUrl}
           altText={item.altText}
           description={item.description}
-          isExpanded
+          /* isExpanded */ //auto show desc
         />
       ))}
     </section>
