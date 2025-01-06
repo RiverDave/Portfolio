@@ -4,11 +4,19 @@ const data = [
   {
     title: "Loblaws Inc.",
     subtitle: "Customer Service Representative",
-    period: "August 2023 - Present",
+    period: "August 2023 - January 2024",
     logoUrl: "/images/loblaws.png",
     altText: "Loblaws",
     description:
       "provided exceptional customer service, addressing inquiries, resolving issues, and ensuring a positive shopping experience for Loblaws customers. My responsibilities included handling transactions, assisting with product returns, and offering personalized assistance to meet customer needs.",
+  },
+
+  {
+    title: "Kinaxis",
+    subtitle: "Software Development Intern, Core Algorithms",
+    period: "January 2025 - August 2025",
+    logoUrl: "/images/kinaxis.png",
+    altText: "Kinaxis",
   },
 ]
 const Experience = () => {
@@ -26,7 +34,7 @@ const Experience = () => {
           logoUrl={item.logoUrl}
           altText={item.altText}
           description={item.description}
-          isExpanded
+          /* isExpanded */ //auto show desc
         />
       ))}
     </section>

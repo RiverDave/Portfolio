@@ -4,7 +4,7 @@ import { ResumeCard } from "./Experience/resumecard"
 const data = [
   {
     title: "Seneca Polythecnic",
-    period: "2023 - 2025",
+    period: "2023 - 2026",
     subtitle: "Computer Programming & Analysis",
     altText: "Seneca",
     logoUrl: "/images/seneca.png",
